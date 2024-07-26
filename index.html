@@ -44,7 +44,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(task, index) in tasks" :key="index">
+        <tr v-for="(task, index) in tasks" :key="index" :class="{'important': task.important}">
           <td>{{ task.title }}</td>
           <td>{{ task.description }}</td>
           <td class="btn-group">
